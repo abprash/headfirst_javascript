@@ -17,7 +17,11 @@ function init(){
 		var image = event.target;
 		//get the id of the image which was clicked
 		var imgId = image.id;
-		//get the corresponding image of it
-		image.src = imgId+".jpg";
+
+		//toggle it
+		if(image.src.indexOf("blur") != -1)
+			image.src = imgId+".jpg";
+		else
+			image.src = imgId+"blur.jpg";
 	}
 }
