@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Pirates Booty</title>
+	
+	<script>
+	window.onload = init;
+	function init(){
+		//get the mouse move position and display  on p
+		window.onmousemove = print;
+		function print(event){
+			if(event.clientX <= 210 && event.clientY >=160 && event.clientX >= 190 && event.clientY <= 210)
+				document.getElementById("coords").innerHTML = "Coordinates: 10, 20";
+			else
+				document.getElementById("coords").innerHTML = "Move mouse to find coordinates...";
+		}
+	}
+	</script>
+</head>
+<body>
+	
+	
+</body>
+<img id="map" src="map.jpg">
+<p id="coords">Move mouse to find coordinates...</p>
+</html>
