@@ -15,6 +15,17 @@
 			else
 				document.getElementById("coords").innerHTML = "Move mouse to find coordinates...";
 		}
+		//timeout takes two args, first is the method to call,
+		//second is the time in millis
+		//while(1)
+		window.setTimeout(timeoutHandler, 5000);
+
+		function timeoutHandler(){
+			alert("hey there!! what are you doing");
+
+			//this will call the function recursively
+			//setTimeout(timeoutHandler, 5000);
+		}
 	}
 	</script>
 </head>
