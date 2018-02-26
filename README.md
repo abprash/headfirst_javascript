@@ -1,1 +1,1 @@
-# headfirst_javascript
+# Basics of JavaScript
